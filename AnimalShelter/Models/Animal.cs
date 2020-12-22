@@ -1,3 +1,5 @@
+using System;
+
 namespace AnimalShelter.Models
 {
     public class Animal
@@ -12,9 +14,6 @@ namespace AnimalShelter.Models
 
         public string Breed { get; set; }
 
-        public struct DateTime : IComparable
-        {
-            int Day { get; set; }
-            int Month { get; set; }
-            int Year { get; set; }
-        }
+        public DateTime AdmittanceDate { get; set; }
+    }
+}
