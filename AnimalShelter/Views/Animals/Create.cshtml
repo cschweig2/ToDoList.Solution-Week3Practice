@@ -3,7 +3,7 @@
 }
 
 @model AnimalShelter.Models.Animal
-  
+
 <h4>Add a new animal</h4>
 @using (Html.BeginForm())
 {
@@ -16,7 +16,8 @@
     @Html.LabelFor(model => model.Breed);
     @Html.TextBoxFor(model => model.Breed);
     @Html.LabelFor(model => model.AdmittanceDate);
-    @Html.TextBoxFor(model => model.AdmittanceDate);
+    @Html.TextBoxFor(model => model.AdmittanceDate, "{0:yyyy-MM-dd}", new {type="date"});
+
     <input type="submit" value="Add new animal" />
 }
 <p>@Html.ActionLink("Show all animals", "Index")</p>
