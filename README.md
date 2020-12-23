@@ -2,7 +2,7 @@
 
 ## Created by: Chelsea Becker and Patrick Osten, last modified 12/23/2020
 
-## Description: A basic Mvc site with a database of animals currently in a shelter.
+## Description: A basic MVC website with a database of animals and human (employed) occupants currently in a shelter.
 
 ## Specs:
 
