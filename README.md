@@ -1,4 +1,4 @@
-## Animal Shelter!
+## Animal Shelter
 
 ## Created by: Chelsea Becker and Patrick Osten, last modified 12/23/2020
 
