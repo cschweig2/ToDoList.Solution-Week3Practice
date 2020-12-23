@@ -1,13 +1,14 @@
 ## Animal Shelter!
 
-## Created by: **_{Chelsea Becker}_** and **_{Garrett Dean Brown}_** (12/22/2020)
+## Created by: Chelsea Becker and Patrick Osten, last modified 12/23/2020
 
 ## Description: A basic Mvc site with a database of animals currently in a shelter.
 
 ## Specs:
 
- 1.) User should be able to add an animal to the shelter's database.
- 2.) User should be able to add and sort animals based on type, breed, gender and date. 
+ 1. User should be able to add an animal to the shelter's database.
+ 2. User should be able to add and sort animals based on type, breed, gender and date. 
+ 3. User should be able to create a Occupant category to sort occupants of the animal shelter into (part-time employee, vet doc, animal, etc.)
 
 ## Technologies used: 
 
@@ -19,4 +20,4 @@
 
 ## Licensing:
 
-Licensed under [MIT] Copyright **_{Chelsea Becker}_** and **_{Garrett Dean Brown}_**
+Licensed under [MIT] Copyright Chelsea Becker and Patrick Osten
