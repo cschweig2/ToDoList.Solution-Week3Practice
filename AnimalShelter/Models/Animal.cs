@@ -15,5 +15,8 @@ namespace AnimalShelter.Models
         public string Breed { get; set; }
 
         public DateTime AdmittanceDate { get; set; }
+
+        public int OccupantId { get; set; }
+        public virtual Occupant Occupant { get; set; }
     }
 }

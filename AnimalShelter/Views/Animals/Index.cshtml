@@ -10,14 +10,10 @@
 <ul>
     @foreach(Animal animal in Model)
     {
-        <li>@Html.ActionLink($"{animal.Name}", "Details", new { id = animal.AnimalId })</li>
+        <li>@Html.ActionLink($"{animal.Name}", "Details", new { id = animal.AnimalId }) | @animal.Occupant.Type</li>
     }
 </ul>
 
-@using (Html.BeginForm())
-{
-    <input type="submit" value="Sort list by breed" />
-}
-
 <p>@Html.ActionLink("Sort list by breed", "Show")</p>
 <p>@Html.ActionLink("Add a new animal", "Create")</p>
+<p>@Html.ActionLink("Home", "Index", "Home")</p>

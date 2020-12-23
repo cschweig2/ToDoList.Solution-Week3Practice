@@ -1,0 +1,14 @@
+@{
+    Layout = "_Layout";
+}
+
+@model AnimalShelter.Models.Animal
+
+<h4>Add a new occupant</h4>
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Type);
+    @Html.TextBoxFor(model => model.Type);
+    
+    <input type="submit" value="Add new occupant" />
+}

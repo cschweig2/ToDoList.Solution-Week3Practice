@@ -1,0 +1,15 @@
+@{
+    Layout = "_Layout";
+}
+
+@using AnimalShelter.Models;
+@model List<AnimalShelter.Models.Occupant>;
+
+<h4>Occupant Sorted By Type</h4>
+
+<ul>
+    @foreach(Occupant occupant in Model)
+    {
+        <li>@Html.ActionLink($"{occupant.Type}", "Details", new { id = occupant.OccupantId })</li>
+    }
+</ul>

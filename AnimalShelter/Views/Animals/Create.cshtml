@@ -17,6 +17,8 @@
     @Html.TextBoxFor(model => model.Breed);
     @Html.LabelFor(model => model.AdmittanceDate);
     @Html.TextBoxFor(model => model.AdmittanceDate, "{0:yyyy-MM-dd}", new {type="date"});
+    @Html.LabelFor(model => model.Occupant)
+    @Html.DropDownList("OccupantId")
 
     <input type="submit" value="Add new animal" />
 }
