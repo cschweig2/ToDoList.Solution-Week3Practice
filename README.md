@@ -13,10 +13,13 @@
 ## Technologies used: 
 
 * C#
+* ASP.NET Core
 * MySql
-* Entity
+* Entity Core
 * Markdown
+* Razor
 * HTML
+* CSS
 
 ## Licensing:
 
