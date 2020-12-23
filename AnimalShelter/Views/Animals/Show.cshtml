@@ -8,10 +8,17 @@
 <h4>Animals Sorted By Breed</h4>
 
 <ul>
-    @foreach(Animal animal in Model)
+    @foreach(Animal animal in @Model["sortBreed"])
     {
         <li>@Html.ActionLink($"{animal.Breed}", "Details", new { id = animal.AnimalId })</li>
     }
 </ul>
+
+@* <ul>
+    @foreach(Animal animal in Model)
+    {
+        <li>@Html.ActionLink($"{animal["sortType"].Type}", "Details", new { id = animal.AnimalId })</li>
+    }
+</ul> *@
 
 <p>@Html.ActionLink("Go back to home", "Index")</p>

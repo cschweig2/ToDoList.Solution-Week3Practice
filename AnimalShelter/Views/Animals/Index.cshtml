@@ -14,5 +14,10 @@
     }
 </ul>
 
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Sort list by breed" />
+}
+
 <p>@Html.ActionLink("Sort list by breed", "Show")</p>
 <p>@Html.ActionLink("Add a new animal", "Create")</p>

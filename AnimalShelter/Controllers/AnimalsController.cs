@@ -41,7 +41,11 @@ namespace AnimalShelter.Controllers
 
     public ActionResult Show()
     {
-      List<Animal> model = _db.Animals.OrderBy(animals => animals.Breed).ToList();
+      List<Animal> sortedBreed = _db.Animals.OrderBy(animals => animals.Breed).ToList();
+      List<Animal> sortedType = _db.Animals.OrderBy(animals => animals.Type).ToList();
+      Dictionary<string, object> model = new Dictionary<string, object>();
+      model.Add("sortBreed", sortedBreed);
+      model.Add("sortType", sortedBreed);
       return View(model);
     }
 
